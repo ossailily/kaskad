@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KASKAD | Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/img/llc2.png">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- (Optional) AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg py-3 fixed-top" data-aos="fade-down" style="background: transparent;">
+        <div class="container align-items-center">
+            <a class="navbar-brand d-flex align-items-center text-white" href="#" style="gap: 2x;">
+                <img src="/assets/img/klogo4.png" alt="KASKAD Logo"
+                    style="width: 95px; height: auto; margin-right: 3px; margin-top: -3px;">
+            </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="services.html">Our Services</a></li>
+                    <div class="nav-item dropdown">
+                        <a href="#!" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Availability</a>
+                        <div class="dropdown-menu bg-light m-0">
+                            <a href="products.html" class="dropdown-item">Products</a>
+                            <a href="procedure.html" class="dropdown-item">Procedures</a>
+                            <a href="terms.html" class="dropdown-item">Terms & Condition</a>
+                        </div>
+                    </div>
+                    <li class="nav-item"><a class="nav-link text-white" href="sustainability.html">Sustainability</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link text-white" href="laboratory.html">Laboratory</a></li>
+                </ul>
+            </div>
+
+            <div class="d-flex devs">
+                <a href="contact.html" class="btn btn-outline-light">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5" style="background-color: #000;">
+        <div class="container text-center text-light" data-aos="fade-up">
+            <h2 class="mb-4"><strong style="color: #FFC512;">Get In Touch</strong></h2>
+            <p class="mb-5">We’re here to answer your inquiries about our products and services. Reach out to us today.
+            </p>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form class="contact-form p-5 rounded-4 shadow-lg">
+                        <div class="mb-3 text-start">
+                            <label for="name" class="form-label text-warning">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="email" class="form-label text-warning">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-3 text-start">
+                            <label for="message" class="form-label text-warning">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Type your message"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-warning w-100 py-2 fw-bold">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-5 contact-info">
+                <p><i class="fa-solid fa-phone text-warning"></i> +79255897719</p>
+                <p><i class="fa-solid fa-envelope text-warning"></i> limitedliabilitycompanykaskad@bk.ru</p>
+                <p><i class="fa-solid fa-location-dot text-warning"></i> 162414, Vologda Region, Chagodoschensky
+                    District, P. Smerdomsky, Str. Mira, D.5, Kv.2</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="text-center py-4 bg-black mt-5">
+        <p>&copy; 2022 LLC KASKAD. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+                .then(() => alert('Message sent successfully!'))
+                .catch(() => alert('Failed to send message.'));
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
